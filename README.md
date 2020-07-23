@@ -1,51 +1,37 @@
-# [Домашняя работа № 12](https://aimoiseyev.github.io/amoiseyev-homework11/)
+# Домашняя работа № 12
 ***
-Версия 0.1.3
+Версия 0.0.1
 
 ## Описание:
-В данном репозитории находится домашняя работа № 11 курса Яндекс.Практикум. Это Учебный проект по сборке и развертыванию приложения.
+В данном репозитории находится домашняя работа № 12 курса Яндекс.Практикум. Это Учебный проект по созданию сервера.
 
 ## Основной функционал: 
-- добавление/удаление карточек (на сервер/с сервера)
-- возможность проставлять лайки
-- изменение профиля
-- изменение аватара
-- валидация форм при добавлении вышеперечисленных пунктов
+- раздает статические файлы
+- API:
+  - по запросу `GET localhost:3000/users` 
+  возвращает JSON всех пользователей
+  - по запросу `GET localhost:3000/users/id` 
+  возвращает JSON пользователя по id
+  - по запросу `GET localhost:3000/cards` 
+      возвращает JSON всех карточек
 
 ## Стэк технологий:
-- ES6
-- Babel
-- OOP
-- CSS3
-- HTML5
-- Webpack
-- BEM
+- node.js
+- express.js
 
 ## Пакеты в сборке:
-- [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav)
-- [Babel Core](https://babeljs.io/docs/en/babel-core)
-- [Babel Preset Evnvironment](https://babeljs.io/docs/en/babel-preset-env#docsNav)
-- [Сore JS](https://github.com/zloirock/core-js#readme)
-- [PostCSS](https://postcss.org/)
-- [Define plugin](https://webpack.js.org/plugins/define-plugin/)
-- [Style loader](https://github.com/webpack-contrib/style-loader)
-- [Optimize CSS assets](https://www.npmjs.com/package/optimize-css-assets-webpack-plugin)
-- [File loader](https://github.com/webpack-contrib/file-loader)
-- [Image Webpack loader](https://www.npmjs.com/package/image-webpack-loader)
-- [Cross-Env](https://www.npmjs.com/package/cross-env)
-- [@babel/plugin-proposal-class-properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties#installation)
-- [Autoprefixer](https://github.com/postcss/autoprefixer#readme)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+- [body-parser](https://www.npmjs.com/package/body-parser)
+- [eslint](https://www.npmjs.com/package/eslint)
+
 
 ## Инструкция по запуску:
 1. Скачать или склонировать репозиторий
 2. Установить зависимости при помощи npm - `npm i`
 3. Запуск:
-    - В режиме development - `npm run dev`
-    - Production-build - `npm run build`
-    - Production-build на github pages - `npm run deploy`
+    - Запуск сервера на localhost:3000 - `npm run start`
+    - Запуск сервера на localhost:3000 с хот релоудом - `npm run dev`
 
-## Github pages:
-https://aimoiseyev.github.io/amoiseyev-homework11/
+## Github:
+https://github.com/AIMoiseyev/amoiseyev-homework12/tree/develop
 
-## Планы по развитию
-дописать серверную часть на Node.js
